@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #ff99c4 40%, rgba(255, 255, 255, 0.12) 100%);
+    padding-bottom: 70px;
+}
+
+header > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 49px 100px 45px;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo-wrapper img {
+    width: 180px;
+    height: 65px;
+}
+
+.color-change-wrapper {
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 150px;
+    margin-top: -178px;
+    margin-right: 210px;
+    padding-top: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.azul img,
+.laranja img {
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rosa img {
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    z-index: 1;
+}
+
+.cor-azul {
+    width: 150px;
+    height: 43px;
+    background: #516ffb;
+    border-radius: 20px;
+    margin-top: 42px;
+    position: relative;
+    z-index: 0;
+}
+
+.prosa {
+    padding: 0px 50px 0px 50px;
+}
+
+.cor-rosa {
+    width: 150px;
+    height: 43px;
+    background: #ed5885;
+    border-radius: 20px;
+    margin-top: 42px;
+    position: relative;
+    z-index: 0;
+}
+
+.cor-laranja {
+    width: 150px;
+    height: 43px;
+    background: #f05e2b;
+    border-radius: 20px;
+    margin-top: 42px;
+    position: relative;
+    z-index: 0;
+}
+
+.mudar-cor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 90px;
+    margin-top: -11rem;
+    margin-right: 12rem;
+}
+
+.rosa {
+    padding-inline: 50px;
+}
+
+
+.searchBar {
+    width: 390px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #8d8d8d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.txt-pesquisa {
+    width: 260px;
+    height: 24px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    color: #8d8d8d;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.search-wrapper {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-picole {
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.grid-picole > div {
+    margin: -20px 20px 90px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 33px;
+    align-items: center;
+}
+
+.caixa-maior {
+    width: 345px;
+    height: 450px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fffefe;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.caixa-maior img {
+    width: 270px;
+    height: 270px;
+}
+
+.nome-picole {
+    width: 306px;
+    height: 40px;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.valor-picole {
+    width: 306px;
+    height: 40px;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.caixa-maior p {
+    width: 250px;
+    height: 40px;
+    color: #8a8585;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 33px;
+    align-items: center;
+}
+
+.grid-2 .caixa-maior p {
+    width: 226px;
+}
+
+.grid-2 .caixa-maior img {
+    padding: 12px 7px 12px;
+}
+
+.caixa-menor {
+    width: 220px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffefe;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.caixa-menor img {
+    width: 158px;
+    height: 158px;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(244, 155, 140, 0.56);
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 35px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 27px;
+    grid-gap: 31px;
+    margin-top: 40px;
+    width: 200px;
+    grid-gap: 20px;
+}
+
+.icon,
+.conteudo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.telefone img {
+    width: 18px;
+    height: 14.35px;
+}
+
+.email img {
+    width: 20px;
+    height: 16px;
+}
+
+.insta img {
+    width: 22.01px;
+    height: 21.88px;
+}
+
+.text-telefone p,
+.text-email p,
+.text-insta p,
+.footer-text p {
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1294px) {
+    .grid-picole > div {
+        margin: -20px 30px 30px;
+    }
+    .grid-picole {
+        flex-wrap: wrap;
+    }
+
+    .grid-2 .caixa-maior {
+        grid-column: 2;
+    }
+
+    .mudar-cor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 90px;
+        margin-top: -58px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .menu {
+        height: 230px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-areas: inherit;
+        height: 180px;
+    }
+
+    .footer-text {
+        grid-row: 2;
+        margin-bottom: 25px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .telefone img {
+        width: 14px;
+        height: 10.29px;
+    }
+
+    .email img {
+        width: 15.83px;
+        height: 12.67px;
+    }
+
+    .insta img {
+        width: 18.01px;
+        height: 18.38px;
+    }
+
+    .footer-social {
+        width: 20px;
+        margin-left: 40px;
+    }
+
+    .conteudo,
+    .icon {
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .searchBar {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .txt-pesquisa {
+        display: none;
+    }
+
+    .text-telefone p,
+    .text-email p,
+    .text-insta p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .footer-text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 614px) {
+    .caixa-maior {
+        width: 247px;
+        height: 340px;
+    }
+
+    .caixa-maior img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nome-picole,
+    .valor-picole {
+        width: 239px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        line-height: 10px;
+    }
+
+    .valor-picole {
+        margin-top: 10px;
+    }
+    .caixa-maior p {
+        width: 225px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 17px;
+        padding-bottom: 35px;
+    }
+
+    .caixa-menor {
+        width: 155px;
+        height: 145px;
+    }
+
+    .grid-2 .caixa-maior p {
+        width: 190px;
+    }
+
+    .caixa-menor img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .text-telefone p,
+    .text-email p,
+    .text-insta p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .footer-text p {
+        font-size: 13px;
+    }
+
+    .header {
+        padding-bottom: 50px;
+    }
+
+    .menu {
+        height: 200px;
+    }
+
+    .azul img,
+    .rosa img,
+    .laranja img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .cor-azul,
+    .cor-rosa,
+    .cor-laranja {
+        width: 110px;
+        height: 33px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        height: 160px;
+        padding: 0px 24px 65px 24px;
+    }
+    .menu-logo img {
+        width: 118px;
+        height: 47px;
+    }
+
+    .azul img,
+    .rosa img,
+    .laranja img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .rosa {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .searchBar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cor-azul,
+    .cor-rosa,
+    .cor-laranja {
+        width: 90px;
+        height: 27px;
+        margin-top: 24px;
+    }
+
+    .search-wrapper,
+    .search-wrapper img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .grid-1,
+    .grid-2 {
+        grid-gap: 17px;
+    }
+
+    .caixa-maior {
+        width: 168px;
+        height: 215px;
+    }
+
+    .caixa-maior img {
+        width: 113px;
+        height: 113px;
+    }
+
+    .nome-picoleo,
+    .valor-picole {
+        width: 109px;
+        height: 19px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .nome-picole {
+        font-size: 17px;
+    }
+
+    .valor-picole {
+        margin-top: -5px;
+    }
+
+    .caixa-maior p {
+        width: 117px;
+        height: 19px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .grid-2 .caixa-maior p {
+        width: 100px;
+    }
+
+    .grid-2 .caixa-maior img {
+        padding: 10px 2px 1px;
+    }
+
+    .caixa-menor {
+        width: 98px;
+        height: 96px;
+    }
+
+    .caixa-menor img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+}
