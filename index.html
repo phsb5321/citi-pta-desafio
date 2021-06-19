@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
 
         <span class="headerWrapper">
             <img src="./assets/nav-logo.svg" alt="nav-log">
             <div class="searchBar">
-                <input type="text" placeholder="Procure seu sorvete">
+                <input type="text" class="inputForm" placeholder="Procure seu sorvete">
                 <span class="searchWrapper">
-                    <img src="./assets/nav-search.svg" alt="nav-search">
+                    <img id="search" src="./assets/nav-search.svg" alt="nav-search">
                 </span>
             </div>
         </span>
@@ -25,18 +25,18 @@
         <div class="color-toggles">
 
             <div class="color-selector">
-                <img src="./assets/icon - 2.png" alt="sorvete azul">
-                <div class="button"></div>
+                <img class="icon" src="./assets/icon - 2.png" alt="sorvete azul">
+                <div class="button" style="background: #516FFB;"></div>
             </div>
 
             <div class="color-selector middle">
-                <img src="./assets/icon - 1.png" alt="sorvete roza">
-                <div class="button"></div>
+                <img class="icon" src="./assets/icon - 1.png" alt="sorvete roza">
+                <div class="button" style="background: #ED5885;"></div>
             </div>
 
             <div class="color-selector">
-                <img src="./assets/icon - 3.png" alt="sorvete laranja">
-                <div class="button"></div>
+                <img class="icon" src="./assets/icon - 3.png" alt="sorvete laranja">
+                <div class="button" style="background: #F05E2B;"></div>
             </div>
 
         </div>
@@ -46,37 +46,37 @@
     <main class="mainFlex">
         <div class="grid grid-1">
 
-            <div class="box big">
+            <div class="box big"  id="tablito">
                 <img src="./assets/image - 6.png" alt="tablito">
                 <p class="title">Picolé Tablito</p>
                 <p class="description">Picolé de chocolate tradicional e branco 106g (R$ 0,05/g)</p>
                 <p class="title">R$ 5,00</p>
             </div>
 
-            <div class="box small">
+            <div class="box small"  id="brigadeiro">
                 <img src="./assets/image - 4.png" alt="brigadeiro">
             </div>
 
-            <div class="box small">
-                <img src="./assets/image - 3.png" alt="kolorix">
+            <div class="box small" id="kolorix">
+                <img src="./assets/image - 3.png" alt="kolorix" >
             </div>
 
         </div>
 
         <div class="grid grid-2">
 
-            <div class="box big">
-                <img src="./assets/image - 2.png" alt="chica bon">
+            <div class="box big" id="chica bon">
+                <img src="./assets/image - 2.png" alt="chica bon" >
                 <p class="title">Chica Bon</p>
                 <p class="description">Picolé de chocolate tradicional 106g (R$ 0,05/g)</p>
                 <p class="title">R$ 5,00</p>
             </div>
 
-            <div class="box small">
-                <img src="./assets/image - 5.png" alt="morango">
+            <div class="box small" id="morango">
+                <img src="./assets/image - 5.png" alt="morango" >
             </div>
 
-            <div class="box small">
+            <div class="box small"  id="minions">
                 <img src="./assets/image - 1.png" alt="minions">
             </div>
 
@@ -84,7 +84,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <span class="footerLogo">
             <img src="./assets/footer-logo.svg" alt="footer logo">
         </span>
@@ -110,6 +110,8 @@
             </tr>
         </table>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
